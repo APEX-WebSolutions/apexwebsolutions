@@ -87,8 +87,8 @@
 
   <!-- PRIMERA SECCIÓN: Video -->
   <section id="video-section">
-    <video id="bg-video" autoplay muted playsinline>
-      <source src="https://raw.githubusercontent.com/APEX-WebSolutions/apexweb.github.io/main/APEX-Web-Solutions.mp4" type="video/mp4">
+    <video id="bg-video" autoplay muted playsinline loop>
+      <source src="https://raw.githubusercontent.com/APEX-WebSolutions/apexwebsolutions/main/Apex-Web-Solutions.mp4" type="video/mp4">
     </video>
   </section>
 
@@ -194,8 +194,6 @@
 
 <script>
   const video = document.getElementById('bg-video');
-
-  // Cuando el video termina, se queda en pausa desde el inicio
   video.onended = () => {
     video.pause();
     video.currentTime = 0;
@@ -203,4 +201,5 @@
 </script>
 </body>
 </html>
+
 
