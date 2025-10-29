@@ -24,22 +24,13 @@
     background:#000;
   }
 
-  /* Video de fondo */
+  /* Sección de imagen */
   #video-section {
     position:relative;
     height:100vh;
     width:100%;
     overflow:hidden;
-  }
-
-  #bg-video {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-1;
+    background: url('https://raw.githubusercontent.com/APEX-WebSolutions/apexwebsolutions/main/upscalemedia-transformed.png') no-repeat center center/cover;
   }
 
   /* Segunda sección: catálogo */
@@ -85,12 +76,8 @@
 </head>
 <body>
 
-  <!-- PRIMERA SECCIÓN: Video -->
-  <section id="video-section">
-    <video id="bg-video" autoplay muted playsinline loop>
-      <source src="https://raw.githubusercontent.com/APEX-WebSolutions/apexwebsolutions/main/Apex-Web-Solutions.mp4" type="video/mp4">
-    </video>
-  </section>
+  <!-- PRIMERA SECCIÓN: Imagen -->
+  <section id="video-section"></section>
 
   <!-- SEGUNDA SECCIÓN: Catálogo -->
   <div class="wrap" role="main">
@@ -191,15 +178,8 @@
       <p style="margin-top:14px;color:var(--muted)">Puedes usar este menú como base. Personalizo cada proyecto según alcance — si el cliente pide integraciones o funcionalidades complejas, presento un presupuesto detallado.</p>
     </section>
   </div>
-
-<script>
-  const video = document.getElementById('bg-video');
-  video.onended = () => {
-    video.pause();
-    video.currentTime = 0;
-  };
-</script>
 </body>
 </html>
+
 
 
